@@ -3,6 +3,7 @@ import NavLinks from '@/app/ui/dashboard/nav-links';
 import AcmeLogo from '@/app/ui/acme-logo';
 import { PowerIcon } from '@heroicons/react/24/outline';
 import { signOut } from '@/auth';
+import styles from '@/app/ui/home.module.css';
 
 export default function SideNav() {
   return (
@@ -11,7 +12,8 @@ export default function SideNav() {
         className="mb-2 flex h-20 items-end justify-start rounded-md bg-blue-600 p-4 md:h-40"
         href="/"
       >
-        <div className="w-32 text-white md:w-40">
+        <div className="flex items-center space-x-2 w-32 text-white md:w-40">
+          <div className={styles.shape} />
           <AcmeLogo />
         </div>
       </Link>
